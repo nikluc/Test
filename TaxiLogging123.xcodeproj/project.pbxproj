@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB908DDA1941E7510090F42D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DD91941E7510090F42D /* Foundation.framework */; };
+		AB908DDC1941E7510090F42D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DDB1941E7510090F42D /* CoreGraphics.framework */; };
+		AB908DDE1941E7510090F42D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DDD1941E7510090F42D /* UIKit.framework */; };
+		AB908DE41941E7510090F42D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB908DE21941E7510090F42D /* InfoPlist.strings */; };
+		AB908DE61941E7520090F42D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB908DE51941E7510090F42D /* main.m */; };
+		AB908DEA1941E7520090F42D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB908DE91941E7520090F42D /* AppDelegate.m */; };
+		AB908DED1941E7520090F42D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB908DEB1941E7520090F42D /* Main.storyboard */; };
+		AB908DFC1941E7520090F42D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DFB1941E7520090F42D /* XCTest.framework */; };
+		AB908DFD1941E7520090F42D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DD91941E7510090F42D /* Foundation.framework */; };
+		AB908DFE1941E7520090F42D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB908DDD1941E7510090F42D /* UIKit.framework */; };
+		AB908E061941E7520090F42D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB908E041941E7520090F42D /* InfoPlist.strings */; };
+		AB908E081941E7520090F42D /* TaxiLoggingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB908E071941E7520090F42D /* TaxiLoggingTests.m */; };
+		AB9B2E69195A75E1009D43E4 /* reportView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9B2E68195A75E1009D43E4 /* reportView.m */; };
+		AB9BEEF3195306350089EF08 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BEEF1195306350089EF08 /* Icon-29.png */; };
+		AB9BEEF4195306360089EF08 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BEEF2195306350089EF08 /* Icon-58.png */; };
+		AB9BF6571942DABA00E30CC8 /* PreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9BF6561942DABA00E30CC8 /* PreViewController.m */; };
+		AB9BF65A1942DAC900E30CC8 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9BF6591942DAC900E30CC8 /* PostViewController.m */; };
+		AB9BF65D1942DADB00E30CC8 /* ExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9BF65C1942DADB00E30CC8 /* ExpensesViewController.m */; };
+		AB9BF6651942E44F00E30CC8 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9BF6641942E44F00E30CC8 /* DBManager.m */; };
+		AB9BF6671942E4BF00E30CC8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9BF6661942E4BF00E30CC8 /* libsqlite3.dylib */; };
+		ABB9704A1967ACA400D796C2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB970491967ACA400D796C2 /* MessageUI.framework */; };
+		ABF184F6195035E000C6E6A7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF184F5195035E000C6E6A7 /* DetailsViewController.m */; };
+		ABF184FA1950730500C6E6A7 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF184F91950730500C6E6A7 /* Icon-76.png */; };
+		ABF184FC1950731600C6E6A7 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF184FB1950731600C6E6A7 /* Icon-152.png */; };
+		ABF184FE1950735900C6E6A7 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF184FD1950735900C6E6A7 /* Icon-40.png */; };
+		ABF185001950736000C6E6A7 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF184FF1950736000C6E6A7 /* Icon-80.png */; };
+		ABF185021950755700C6E6A7 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF185011950755700C6E6A7 /* Default-Portrait.png */; };
+		ABF185041950756F00C6E6A7 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF185031950756F00C6E6A7 /* Default-Portrait@2x.png */; };
+		ABF185061950758900C6E6A7 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF185051950758900C6E6A7 /* Default-Landscape@2x.png */; };
+		ABF18513195084E400C6E6A7 /* expense@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF1850F195084E400C6E6A7 /* expense@2x.png */; };
+		ABF18514195084E400C6E6A7 /* postshift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18510195084E400C6E6A7 /* postshift@2x.png */; };
+		ABF18515195084E400C6E6A7 /* preshift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18511195084E400C6E6A7 /* preshift@2x.png */; };
+		ABF18516195084E400C6E6A7 /* view@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18512195084E400C6E6A7 /* view@2x.png */; };
+		ABF1851B195084F700C6E6A7 /* expense.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18517195084F700C6E6A7 /* expense.png */; };
+		ABF1851C195084F700C6E6A7 /* postshift.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18518195084F700C6E6A7 /* postshift.png */; };
+		ABF1851D195084F700C6E6A7 /* preshift.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF18519195084F700C6E6A7 /* preshift.png */; };
+		ABF1851E195084F700C6E6A7 /* view.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF1851A195084F700C6E6A7 /* view.png */; };
+		ABF185201950863800C6E6A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF1851F1950863800C6E6A7 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB908DFF1941E7520090F42D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB908DCE1941E7510090F42D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB908DD51941E7510090F42D;
+			remoteInfo = TaxiLogging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB908DD61941E7510090F42D /* TaxiLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB908DD91941E7510090F42D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB908DDB1941E7510090F42D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB908DDD1941E7510090F42D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB908DE11941E7510090F42D /* TaxiLogging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaxiLogging-Info.plist"; sourceTree = "<group>"; };
+		AB908DE31941E7510090F42D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB908DE51941E7510090F42D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB908DE71941E7520090F42D /* TaxiLogging-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaxiLogging-Prefix.pch"; sourceTree = "<group>"; };
+		AB908DE81941E7520090F42D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB908DE91941E7520090F42D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB908DEC1941E7520090F42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB908DFA1941E7520090F42D /* TaxiLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB908DFB1941E7520090F42D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB908E031941E7520090F42D /* TaxiLoggingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaxiLoggingTests-Info.plist"; sourceTree = "<group>"; };
+		AB908E051941E7520090F42D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB908E071941E7520090F42D /* TaxiLoggingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiLoggingTests.m; sourceTree = "<group>"; };
+		AB9B2E67195A75E1009D43E4 /* reportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reportView.h; sourceTree = "<group>"; };
+		AB9B2E68195A75E1009D43E4 /* reportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reportView.m; sourceTree = "<group>"; };
+		AB9BEEF1195306350089EF08 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		AB9BEEF2195306350089EF08 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
+		AB9BF6551942DABA00E30CC8 /* PreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreViewController.h; sourceTree = "<group>"; };
+		AB9BF6561942DABA00E30CC8 /* PreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreViewController.m; sourceTree = "<group>"; };
+		AB9BF6581942DAC900E30CC8 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		AB9BF6591942DAC900E30CC8 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		AB9BF65B1942DADB00E30CC8 /* ExpensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpensesViewController.h; sourceTree = "<group>"; };
+		AB9BF65C1942DADB00E30CC8 /* ExpensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpensesViewController.m; sourceTree = "<group>"; };
+		AB9BF6631942E44F00E30CC8 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		AB9BF6641942E44F00E30CC8 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		AB9BF6661942E4BF00E30CC8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		ABB970491967ACA400D796C2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		ABF184F4195035E000C6E6A7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		ABF184F5195035E000C6E6A7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		ABF184F91950730500C6E6A7 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "../TaxiLogging/Icon-76.png"; sourceTree = "<group>"; };
+		ABF184FB1950731600C6E6A7 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "../TaxiLogging/Icon-152.png"; sourceTree = "<group>"; };
+		ABF184FD1950735900C6E6A7 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "../TaxiLogging/Icon-40.png"; sourceTree = "<group>"; };
+		ABF184FF1950736000C6E6A7 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-80.png"; path = "../TaxiLogging/Icon-80.png"; sourceTree = "<group>"; };
+		ABF185011950755700C6E6A7 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "../TaxiLogging/Default-Portrait.png"; sourceTree = "<group>"; };
+		ABF185031950756F00C6E6A7 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x.png"; path = "../TaxiLogging/Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		ABF185051950758900C6E6A7 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "../TaxiLogging/Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		ABF1850F195084E400C6E6A7 /* expense@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expense@2x.png"; sourceTree = "<group>"; };
+		ABF18510195084E400C6E6A7 /* postshift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "postshift@2x.png"; sourceTree = "<group>"; };
+		ABF18511195084E400C6E6A7 /* preshift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preshift@2x.png"; sourceTree = "<group>"; };
+		ABF18512195084E400C6E6A7 /* view@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view@2x.png"; sourceTree = "<group>"; };
+		ABF18517195084F700C6E6A7 /* expense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expense.png; sourceTree = "<group>"; };
+		ABF18518195084F700C6E6A7 /* postshift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postshift.png; sourceTree = "<group>"; };
+		ABF18519195084F700C6E6A7 /* preshift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preshift.png; sourceTree = "<group>"; };
+		ABF1851A195084F700C6E6A7 /* view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view.png; sourceTree = "<group>"; };
+		ABF1851F1950863800C6E6A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB908DD31941E7510090F42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB9704A1967ACA400D796C2 /* MessageUI.framework in Frameworks */,
+				AB9BF6671942E4BF00E30CC8 /* libsqlite3.dylib in Frameworks */,
+				AB908DDC1941E7510090F42D /* CoreGraphics.framework in Frameworks */,
+				AB908DDE1941E7510090F42D /* UIKit.framework in Frameworks */,
+				AB908DDA1941E7510090F42D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB908DF71941E7520090F42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB908DFC1941E7520090F42D /* XCTest.framework in Frameworks */,
+				AB908DFE1941E7520090F42D /* UIKit.framework in Frameworks */,
+				AB908DFD1941E7520090F42D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB908DCD1941E7510090F42D = {
+			isa = PBXGroup;
+			children = (
+				AB908DDF1941E7510090F42D /* TaxiLogging */,
+				AB908E011941E7520090F42D /* TaxiLoggingTests */,
+				AB908DD81941E7510090F42D /* Frameworks */,
+				AB908DD71941E7510090F42D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB908DD71941E7510090F42D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB908DD61941E7510090F42D /* TaxiLogging.app */,
+				AB908DFA1941E7520090F42D /* TaxiLoggingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB908DD81941E7510090F42D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABB970491967ACA400D796C2 /* MessageUI.framework */,
+				AB9BF6661942E4BF00E30CC8 /* libsqlite3.dylib */,
+				AB908DD91941E7510090F42D /* Foundation.framework */,
+				AB908DDB1941E7510090F42D /* CoreGraphics.framework */,
+				AB908DDD1941E7510090F42D /* UIKit.framework */,
+				AB908DFB1941E7520090F42D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB908DDF1941E7510090F42D /* TaxiLogging */ = {
+			isa = PBXGroup;
+			children = (
+				AB908DE81941E7520090F42D /* AppDelegate.h */,
+				AB908DE91941E7520090F42D /* AppDelegate.m */,
+				AB908DEB1941E7520090F42D /* Main.storyboard */,
+				AB908DE01941E7510090F42D /* Supporting Files */,
+				AB9BF6551942DABA00E30CC8 /* PreViewController.h */,
+				AB9BF6561942DABA00E30CC8 /* PreViewController.m */,
+				AB9BF6581942DAC900E30CC8 /* PostViewController.h */,
+				AB9BF6591942DAC900E30CC8 /* PostViewController.m */,
+				AB9BF65B1942DADB00E30CC8 /* ExpensesViewController.h */,
+				AB9BF65C1942DADB00E30CC8 /* ExpensesViewController.m */,
+				AB9BF6631942E44F00E30CC8 /* DBManager.h */,
+				AB9BF6641942E44F00E30CC8 /* DBManager.m */,
+				ABF184F4195035E000C6E6A7 /* DetailsViewController.h */,
+				ABF184F5195035E000C6E6A7 /* DetailsViewController.m */,
+				ABF1851F1950863800C6E6A7 /* Images.xcassets */,
+				AB9B2E67195A75E1009D43E4 /* reportView.h */,
+				AB9B2E68195A75E1009D43E4 /* reportView.m */,
+			);
+			path = TaxiLogging;
+			sourceTree = "<group>";
+		};
+		AB908DE01941E7510090F42D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB908DE11941E7510090F42D /* TaxiLogging-Info.plist */,
+				AB908DE21941E7510090F42D /* InfoPlist.strings */,
+				AB908DE51941E7510090F42D /* main.m */,
+				AB908DE71941E7520090F42D /* TaxiLogging-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB908E011941E7520090F42D /* TaxiLoggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB908E071941E7520090F42D /* TaxiLoggingTests.m */,
+				AB908E021941E7520090F42D /* Supporting Files */,
+			);
+			path = TaxiLoggingTests;
+			sourceTree = "<group>";
+		};
+		AB908E021941E7520090F42D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB9BEEF1195306350089EF08 /* Icon-29.png */,
+				AB9BEEF2195306350089EF08 /* Icon-58.png */,
+				ABF18517195084F700C6E6A7 /* expense.png */,
+				ABF18518195084F700C6E6A7 /* postshift.png */,
+				ABF18519195084F700C6E6A7 /* preshift.png */,
+				ABF1851A195084F700C6E6A7 /* view.png */,
+				ABF1850F195084E400C6E6A7 /* expense@2x.png */,
+				ABF18510195084E400C6E6A7 /* postshift@2x.png */,
+				ABF18511195084E400C6E6A7 /* preshift@2x.png */,
+				ABF18512195084E400C6E6A7 /* view@2x.png */,
+				ABF185051950758900C6E6A7 /* Default-Landscape@2x.png */,
+				ABF185031950756F00C6E6A7 /* Default-Portrait@2x.png */,
+				ABF185011950755700C6E6A7 /* Default-Portrait.png */,
+				ABF184FF1950736000C6E6A7 /* Icon-80.png */,
+				ABF184FD1950735900C6E6A7 /* Icon-40.png */,
+				ABF184FB1950731600C6E6A7 /* Icon-152.png */,
+				ABF184F91950730500C6E6A7 /* Icon-76.png */,
+				AB908E031941E7520090F42D /* TaxiLoggingTests-Info.plist */,
+				AB908E041941E7520090F42D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB908DD51941E7510090F42D /* TaxiLogging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB908E0B1941E7520090F42D /* Build configuration list for PBXNativeTarget "TaxiLogging" */;
+			buildPhases = (
+				AB908DD21941E7510090F42D /* Sources */,
+				AB908DD31941E7510090F42D /* Frameworks */,
+				AB908DD41941E7510090F42D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiLogging;
+			productName = TaxiLogging;
+			productReference = AB908DD61941E7510090F42D /* TaxiLogging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB908DF91941E7520090F42D /* TaxiLoggingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB908E0E1941E7520090F42D /* Build configuration list for PBXNativeTarget "TaxiLoggingTests" */;
+			buildPhases = (
+				AB908DF61941E7520090F42D /* Sources */,
+				AB908DF71941E7520090F42D /* Frameworks */,
+				AB908DF81941E7520090F42D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB908E001941E7520090F42D /* PBXTargetDependency */,
+			);
+			name = TaxiLoggingTests;
+			productName = TaxiLoggingTests;
+			productReference = AB908DFA1941E7520090F42D /* TaxiLoggingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB908DCE1941E7510090F42D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ppts;
+				TargetAttributes = {
+					AB908DD51941E7510090F42D = {
+						DevelopmentTeam = KSKZ9G2HQC;
+					};
+					AB908DF91941E7520090F42D = {
+						TestTargetID = AB908DD51941E7510090F42D;
+					};
+				};
+			};
+			buildConfigurationList = AB908DD11941E7510090F42D /* Build configuration list for PBXProject "TaxiLogging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB908DCD1941E7510090F42D;
+			productRefGroup = AB908DD71941E7510090F42D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB908DD51941E7510090F42D /* TaxiLogging */,
+				AB908DF91941E7520090F42D /* TaxiLoggingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB908DD41941E7510090F42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF185001950736000C6E6A7 /* Icon-80.png in Resources */,
+				ABF185201950863800C6E6A7 /* Images.xcassets in Resources */,
+				ABF184FA1950730500C6E6A7 /* Icon-76.png in Resources */,
+				ABF185041950756F00C6E6A7 /* Default-Portrait@2x.png in Resources */,
+				ABF184FE1950735900C6E6A7 /* Icon-40.png in Resources */,
+				AB908DE41941E7510090F42D /* InfoPlist.strings in Resources */,
+				ABF184FC1950731600C6E6A7 /* Icon-152.png in Resources */,
+				ABF185021950755700C6E6A7 /* Default-Portrait.png in Resources */,
+				ABF185061950758900C6E6A7 /* Default-Landscape@2x.png in Resources */,
+				AB908DED1941E7520090F42D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB908DF81941E7520090F42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF1851B195084F700C6E6A7 /* expense.png in Resources */,
+				AB908E061941E7520090F42D /* InfoPlist.strings in Resources */,
+				ABF1851E195084F700C6E6A7 /* view.png in Resources */,
+				ABF18515195084E400C6E6A7 /* preshift@2x.png in Resources */,
+				ABF18513195084E400C6E6A7 /* expense@2x.png in Resources */,
+				ABF1851D195084F700C6E6A7 /* preshift.png in Resources */,
+				ABF1851C195084F700C6E6A7 /* postshift.png in Resources */,
+				AB9BEEF4195306360089EF08 /* Icon-58.png in Resources */,
+				ABF18516195084E400C6E6A7 /* view@2x.png in Resources */,
+				ABF18514195084E400C6E6A7 /* postshift@2x.png in Resources */,
+				AB9BEEF3195306350089EF08 /* Icon-29.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB908DD21941E7510090F42D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9B2E69195A75E1009D43E4 /* reportView.m in Sources */,
+				AB9BF6651942E44F00E30CC8 /* DBManager.m in Sources */,
+				AB9BF65A1942DAC900E30CC8 /* PostViewController.m in Sources */,
+				AB908DEA1941E7520090F42D /* AppDelegate.m in Sources */,
+				AB9BF65D1942DADB00E30CC8 /* ExpensesViewController.m in Sources */,
+				ABF184F6195035E000C6E6A7 /* DetailsViewController.m in Sources */,
+				AB9BF6571942DABA00E30CC8 /* PreViewController.m in Sources */,
+				AB908DE61941E7520090F42D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB908DF61941E7520090F42D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB908E081941E7520090F42D /* TaxiLoggingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB908E001941E7520090F42D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB908DD51941E7510090F42D /* TaxiLogging */;
+			targetProxy = AB908DFF1941E7520090F42D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB908DE21941E7510090F42D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB908DE31941E7510090F42D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB908DEB1941E7520090F42D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB908DEC1941E7520090F42D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB908E041941E7520090F42D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB908E051941E7520090F42D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB908E091941E7520090F42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AB908E0A1941E7520090F42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB908E0C1941E7520090F42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaxiLogging/TaxiLogging-Prefix.pch";
+				INFOPLIST_FILE = "TaxiLogging/TaxiLogging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB908E0D1941E7520090F42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaxiLogging/TaxiLogging-Prefix.pch";
+				INFOPLIST_FILE = "TaxiLogging/TaxiLogging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB908E0F1941E7520090F42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaxiLogging.app/TaxiLogging";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaxiLogging/TaxiLogging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TaxiLoggingTests/TaxiLoggingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB908E101941E7520090F42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaxiLogging.app/TaxiLogging";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaxiLogging/TaxiLogging-Prefix.pch";
+				INFOPLIST_FILE = "TaxiLoggingTests/TaxiLoggingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB908DD11941E7510090F42D /* Build configuration list for PBXProject "TaxiLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB908E091941E7520090F42D /* Debug */,
+				AB908E0A1941E7520090F42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB908E0B1941E7520090F42D /* Build configuration list for PBXNativeTarget "TaxiLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB908E0C1941E7520090F42D /* Debug */,
+				AB908E0D1941E7520090F42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB908E0E1941E7520090F42D /* Build configuration list for PBXNativeTarget "TaxiLoggingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB908E0F1941E7520090F42D /* Debug */,
+				AB908E101941E7520090F42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB908DCE1941E7510090F42D /* Project object */;
+}
